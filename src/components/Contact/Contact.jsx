@@ -6,7 +6,7 @@ import { deleteContact } from "../../redux/contactsOps";
 const Contact = ({ name, number, id }) => {
   const dispatch = useDispatch();
   return (
-    <li className={s.wrapper}>
+    <div className={s.wrapper}>
       <div className={s.container}>
         <p>
           <FaRegUser />
@@ -24,7 +24,7 @@ const Contact = ({ name, number, id }) => {
       >
         Delete
       </button>
-    </li>
+    </div>
   );
 };
 
